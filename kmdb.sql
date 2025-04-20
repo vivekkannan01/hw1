@@ -233,4 +233,6 @@ SELECT movies.movie_title, actors.name, roles.character_name
 FROM roles
 INNER JOIN movies ON roles.movie_id = movies.id
 INNER JOIN actors ON roles.actor_id = actors.id
-ORDER BY movies.movie_title, roles.id;
+ORDER BY movies.id, roles.id;
+
+.print ""
